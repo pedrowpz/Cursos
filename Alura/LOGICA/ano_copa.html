@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+  var anoCopa = 1930;
+  var limete = parseInt(prompt("Entre com a data limete"));  
+
+  while(anoCopa <= limete) {
+    
+    mostra("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;
+  }
+
+  mostra("FIM");
+
+</script>

@@ -1,0 +1,43 @@
+No último vídeo estávamos pensando sobre como realizar operações matemáticas com as nossas variáveis. Para entendermos esse processo, criaremos um arquivo operacoes.php.
+
+Se você estiver utilizando algum editor de texto ou IDE que não o PhpStorm, lembre-se sempre de adicionar a extensão .php ao final do arquivo!
+
+No exemplo anterior, a ideia era calcularmos a idade que eu teria em 10 anos. Portanto, criaremos uma variável $idadeDaqui10Anos. Sabendo que hoje eu tenho 21 anos, podemos adicionar a esse valor + 10:
+
+$idadeDaqui10Anos = 21 + 10;COPIAR CÓDIGO
+Com isso, realizaremos uma soma. Dentro de operações matemáticas, podemos inclusive utilizar outras variáveis:
+
+$idade = 21;
+$idadeDaqui10Anos = $idade + 10;COPIAR CÓDIGO
+Dessa forma, o PHP entenderá que o valor de idadeDaqui10Anos é o valor de $idade, que definimos como 21, mais o valor 10, que não foi armazenado em outra variável. Podemos finalizar com echo $idadeDaqui10Anos para verificarmos se o PHP realiza essa operação corretamente.
+
+Executando php operacoes.php no terminal, receberemos o valor "31". Se mudarmos o valor de $idade para 25, receberemos "35". Assim, aprendemos que uma operação matemática é muito simples de ser executada com o PHP, e ainda podemos utilizar variáveis dentro de uma operação.
+
+Além da soma, podemos fazer outras operações, como a subtração:
+
+$idade = 21;
+$idadeHa5Anos = $idade - 5;
+
+echo $idadeHa5Anos;COPIAR CÓDIGO
+Dessa forma, o valor "16" será exibido na tela. Antes de continuarmos com outras operações, vamos apagar todo o código que escrevemos até agora. Em seguida, informaremos que $soma recebe 2 + 2; que $subtracao recebe 2 - 2; que $multiplicacao recebe 2 * 2 (o asterisco é utilizado para essa operação); e $divisao recebe 2 / 2.
+
+É interessante não utilizar cedilhas, tils e outros acentos em nomes de variáveis, pois às vezes elas podem atrapalhar o funcionamento da aplicação!
+
+$soma = 2 + 2;
+$subtracao = 2 - 2;
+$multiplicacao = 2 * 2;
+$divisao = 2 / 2;COPIAR CÓDIGO
+Essa são as quatro operações matemáticas básicas a partir das quais conseguiremos chegar em outros resultados. Por exemplo, se quisermos a potência de um número, por exemplo, 2 elevado ao cubo, poderíamos fazer 2 * 2 * 2. Existe ainda o operador de potência, representado por dois asteriscos **.
+
+$doisAoCubo = 2 ** 3;
+//ou
+$doisAoCubo = 2 * 2 * 2;COPIAR CÓDIGO
+Ambas as construções, obviamente, retornam o mesmo resultado (8). Outra operação que podemos buscar é o $restoDaDivisao. Por exemplo, se dividirmos 10 por 3 e quisermos o quanto sobrou dessa operação, utilizamos, ao invés de /, o %:
+
+$restoDaDivisao = 10 % 3;
+echo $restoDaDivisao;COPIAR CÓDIGO
+Executando esse código, teremos como retorno o valor "1". Isso porque 10 dividido por 3 é 3, e o resto é 1 (não estamos contando, claro, divisões que aceitam números decimais).
+
+Repare, então, que fizemos todas essas operações com números inteiros. Será que é possível trabalharmos com números decimais? Que outros tipos de dados o PHP consegue trabalhar em uma variável?
+
+Conversaremos sobre isso no próximo vídeo.
